@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ESTILOS.HTML">
+    <style>
+        body {
+            font-family: 'Muli', sans-serif;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            color: #989898;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            
+            color: #333; /* Cambio de color para mayor contraste */
+            font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+            line-height: 1.6; /* Espaciado entre líneas */
+            text-align: justify; /* Justificación del texto */
+            padding: 0 2rem; /* Espacio en los lados para mejorar la legibilidad */
+            margin-bottom: 2rem; /* Margen inferior para separar los párrafos */
+        }
+        /* Estilos para el encabezado */
+        header {
+            background: #ffffff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            background-image: url('12.jpg'); /* Ruta de tu imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+        /* Estilos para el h1 con imagen de fondo */
+        header h1 {
+            margin: 0;
+            
+            height: 70px;
+            font-size: 4.5rem;
+            color: white; /* Asegura que el texto sea visible sobre la imagen */
+            padding: 2rem;
+            /*background-image: url('3.jpg'); /* Ruta de  imagen */
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+        /* Estilos para la barra de navegación */
+        nav {
+            background: #e81f76;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #000;
+        }
+        /* Estilos para el contenido principal */
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 4rem;
+            color: #e81f76;
+        }
+        .content p{
+            color: #333; /* Cambio de color para mayor contraste */
+            font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+            line-height: 1.6; /* Espaciado entre líneas */
+            text-align: justify; /* Justificación del texto */
+            padding: 0 2rem; /* Espacio en los lados para mejorar la legibilidad */
+            margin-bottom: 2rem; /* Margen inferior para separar los párrafos */
+        }
+        /* Estilos para el pie de página */
+        footer {
+            background: #f9f9fa;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        /* Estilos para los botones */
+        .btn {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 900;
+            padding: 10px 20px;
+            border: 2px solid;
+            transition: 0.3s all ease;
+            margin-top: 1rem;
+        }
+        .btn-primary {
+            border-color: #e81f76;
+            background: #e81f76;
+            color: white;
+        }
+        .btn-primary:hover {
+            border-color: #000;
+            background: #000;
+        }
+        .btn-outline {
+            background: transparent;
+            color: #29275d;
+            border-color: #29275d;
+        }
+        .btn-outline:hover {
+            background: #29275d;
+            color: white;
+        }
+        /* Estilos específicos para la sección de video de YouTube */
+        .youtube-video {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .youtube-video iframe {
+            width: 80%; /* Ancho del iframe */
+            max-width: 800px; /* Máximo ancho del iframe */
+            height: 400px; /* Altura del iframe */
+            border: none; /* Sin borde */
+        }
+       
+        /* Estilos para la galería */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        /* Estilos para cada elemento de la galería */
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilos para las imágenes */
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        /* Efecto de zoom al pasar el cursor sobre las imágenes */
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+        /* Estilos para las columnas */
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+        .column {
+            width: 48%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .column img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Turismo Municipal</h1>
+        <center>
+            <img src="sanluiscapitallogo.png" height="200px" width="190px">
+        </center>
+        <!-- Barra de navegación -->
+        <nav>
+            <ul>
+                <li><a href="INICIO.HTML">INICIO</a></li>
+                <li><a href="SOMOS.HTML">QUIENES SOMOS</a></li>
+                <li><a href="TURISMO DE REUNIONES.HTML">TURISMO DE REUNIONES</a></li>
+                <li><a href="ATENCIONT.HTML">ATENCION AL TURISTA</a></li>
+                <li><a href="CAPACITACION TURISTICA.HTML">CAPACITACIÓN TURISTICA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <div class="content">
+        <h2>TURISMO SOCIAL</h2>
+        <img src="11.jpg" height="400PX" >
+        <p>El Turismo Social se concibe como un derecho universal, mediante el cual se garantiza el acceso al descanso, recreación, ocio, tiempo libre, por parte de segmentos de población en vulnerabilidad social y económica, en condiciones adecuadas de economía, accesibilidad, seguridad, comodidad y calidad. Fuente ICT</p>
+        <p>En la Dirección de Turismo Municipal trabajamos para garantizar el turismo como derecho para todas las personas (personas con discapacidad, personas adultas mayores, niñas y niños, y cualquier persona en situación de vulnerabilidad). Por un turismo Social, Solidario y Sostenible.</p>
+    </div>
+
+    <!-- Sección de columnas -->
+    <div class="columns">
+        <div class="column">
+            <h3>TURISMO PARA TODOS Y TODAS</h3>
+            <p>Un programa dirigido a personas en situación de vulnerabilidad en el que la cuenta cuentos, Martha Soriano (promotora cultural/narradora oral escénica), lleva distintas historias a asilos, escuelas de nivel básico, al Centro de Reinserción Social (CERESO), etc.
+                Este programa es gratuito y abierto al público en general.</p>
+            <img src="A.JPG" alt="Imagen de ejemplo">
+        </div>
+        <div class="column">
+            <h3>REVISIONES DE ACCESIBILIDAD</h3>
+            <p>
+                Las revisiones de accesibilidad son ejercicios de comparativa con estándares internacionales en materia de accesibilidad para conocer el estado de instalaciones, atención y capacitación con el objetivo de garantizar el acceso a personas con discapacidad en igualdad de condiciones.</p>
+            <img src="B.JPG" alt="Imagen de ejemplo">
+        </div>
+        <div class="column">
+            <h3>SENTIR PARA VER</h3>
+            <p>                ¿Te imaginas conocer los lugares más icónicos del Centro Histórico con los ojos vendados?
+                
+                Como parte del área de Turismo Inclusivo, la Dirección de Turismo Municipal realiza un recorrido por algunos sitios de interés en el Centro Histórico de la capital potosina, este es realizado por personas con discapacidad visual, quienes invitan a las personas a escuchar y sentir la arquitectura, esculturas y los sonidos de la ciudad.</p>
+            <img src="C.JPG" alt="Imagen de ejemplo">
+        </div>
+        <div class="column">
+            <h3>GUÍA EN BRAILLE</h3>
+            <p>¿Te imaginas conocer los lugares más icónicos del Centro Histórico con los ojos vendados?
+
+                Disponible de forma gratuita, la guía en braille pone al alcance de las personas con discapacidad visual la información sobre algunos de los lugares más representativos de la capital. Este trabajo realizado en conjunto con el DIF Municipal es un ejemplo del trabajo que realizamos para garantizar el turismo como derecho.</p>
+            <img src="D.JPG" alt="Imagen de ejemplo">
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p> MIGUEL ANGEL LOPEZ ROSALES PROGRAMACION WEB 1 UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI PROYECTO FINAL</p>
+    </footer>
+</body>
+</html>

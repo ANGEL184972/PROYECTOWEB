@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Municipal</title>
+    <!-- Fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;900&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="ESTILOS.HTML">
+    <style>
+        body {
+            font-family: 'Muli', sans-serif;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            color: #989898;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            
+            color: #333; /* Cambio de color para mayor contraste */
+            font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+            line-height: 1.6; /* Espaciado entre líneas */
+            text-align: center; /* Justificación del texto */
+            padding: 0 2rem; /* Espacio en los lados para mejorar la legibilidad */
+            margin-bottom: 2rem; /* Margen inferior para separar los párrafos */
+        }
+        /* Estilos para el encabezado */
+        header {
+            background: #ffffff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            background-image: url('12.jpg'); /* Ruta de tu imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+        /* Estilos para el h1 con imagen de fondo */
+        header h1 {
+            margin: 0;
+            
+            height: 80px;
+            font-size: 4.5rem;
+            color: white; /* Asegura que el texto sea visible sobre la imagen */
+            padding: 2rem;
+            /*background-image: url('3.jpg'); /* Ruta de  imagen */
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+        /* Estilos para la barra de navegación */
+        nav {
+            background: #e81f76;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #000;
+        }
+        /* Estilos para el contenido principal */
+        .content {
+            padding: 2rem;
+            text-align: center;
+            
+        }
+        .content h2 {
+            font-size: 4rem;
+            color: #e81f76;
+        }
+        .content p {
+            color: #000000;
+        }
+        /* Estilos para el pie de página */
+        footer {
+            background: #f9f9fa;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        /* Estilos para los botones */
+        .btn {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 900;
+            padding: 10px 20px;
+            border: 2px solid;
+            transition: 0.3s all ease;
+            margin-top: 1rem;
+        }
+        .btn-primary {
+            border-color: #e81f76;
+            background: #e81f76;
+            color: white;
+        }
+        .btn-primary:hover {
+            border-color: #000;
+            background: #000;
+        }
+        .btn-outline {
+            background: transparent;
+            color: #29275d;
+            border-color: #29275d;
+        }
+        .btn-outline:hover {
+            background: #29275d;
+            color: white;
+        }
+        /* Estilos específicos para la sección de video de YouTube */
+        .youtube-video {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .youtube-video iframe {
+            width: 80%; /* Ancho del iframe */
+            max-width: 800px; /* Máximo ancho del iframe */
+            height: 400px; /* Altura del iframe */
+            border: none; /* Sin borde */
+        }
+        /* Estilos para la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para cada elemento de la galería */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las imágenes */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de zoom al pasar el cursor sobre las imágenes */
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Sección de encabezado con el título principal -->
+<header>
+    <h1>Turismo Municipal</h1>
+    <center>
+        <img src="sanluiscapitallogo.png" height="200px" width="190px" >
+    </center>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="INICIO.HTML">INICIO</a></li>
+            <li><a href="TURISMO SOCIAL.HTML">TURISMO SOCIAL</a></li>
+            <li><a href="TURISMO DE REUNIONES.HTML">TURISMO DE REUNIONES</a></li>
+            <li><a href="ATENCIONT.HTML">ATENCION AL TURISTA</a></li>
+            <li><a href="CAPACITACION TURISTICA.HTML">CAPACITACIÓN TURISTICA</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contenido principal de la página -->
+<div class="content">
+    <h2>QUIENES SOMOS?</h2>
+    <img src="1.jpg" height="400px">
+    <h3>Descubre los lugares más emblemáticos, eventos y actividades que nuestra ciudad tiene para ofrecer.</h3>
+    
+</div>
+
+<!-- Sección de video de YouTube -->
+<section class="youtube-video" id="youtube">
+    <iframe width="400" height="400" src="https://www.youtube.com/embed/QCB9VXULmTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="centro.jpg" alt="Centro Histórico">
+        <div class="overlay">
+            <div class="text">Centro Histórico de San Luis Potosí</div>
+            <div class="description">El corazón histórico de la ciudad, con arquitectura colonial y sitios emblemáticos.</div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="tangamanga" alt="Parque Tangamanga I">
+        <div class="overlay">
+            <div class="text">Parque Tangamanga I</div>
+            <div class="description">El parque urbano más grande de México, ideal para actividades al aire libre y recreativas.</div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="museo" alt="Museo Regional Potosino">
+        <div class="overlay">
+            <div class="text">Museo Regional Potosino</div>
+            <div class="description">Un museo que exhibe la historia y la cultura de la región potosina.</div>
+        </div>
+    </div>
+    
+    <div class="gallery-item">
+        <img src="carmen.jpg" alt="Templo del Carmen">
+        <div class="overlay">
+            <div class="text">Templo del Carmen</div>
+            <div class="description">Una iglesia barroca con una impresionante fachada y obras de arte religioso en su interior.</div>
+        </div>
+    </div>
+</div> 
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="1.jpg" alt="Imagen 1">
+    </div>
+    <div class="gallery-item">
+        <img src="2.jpg" alt="Imagen 2">
+    </div>
+    <div class="gallery-item">
+        <img src="3.jpg" alt="Imagen 3">
+    </div>
+    <div class="gallery-item">
+        <img src="4.jpg" alt="Imagen 3">
+        
+    </div>
+    
+   
+</div>
+
+
+<!-- Pie de página -->
+<footer>
+    <p> MIGUEL ANGEL LOPEZ ROSALES PROGRAMACION WEB 1 UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI PROYECTO FINAL</p>
+</footer>
+
+</body>
+</html>
