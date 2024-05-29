@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ESTILOS.HTML">
+    <style>
+        body {
+            font-family: 'Muli', sans-serif;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            color: #989898;
+            margin: 0;
+            padding: 0;
+        }
+         /* Estilos para el contenedor principal */
+         .redes-sociales {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Estilos para los iconos de redes sociales */
+        .redes-sociales i {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #333;
+            transition: color 0.3s;
+        }
+        /* Cambio de color al pasar el cursor sobre los iconos */
+        .redes-sociales i:hover {
+            color: #e81f76;
+        }
+        p {
+            color: #000;
+        }
+        /* Estilos para el encabezado */
+        header {
+            background: #ffffff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            background-image: url('12.jpg'); /* Ruta de tu imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+        /* Estilos para el h1 con imagen de fondo */
+        header h1 {
+            margin: 0;
+            
+            height: 80px;
+            font-size: 4.5rem;
+            color: white; /* Asegura que el texto sea visible sobre la imagen */
+            padding: 2rem;
+            /*background-image: url('3.jpg'); /* Ruta de  imagen */
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+           /* Estilos para el contenedor principal */
+           .redes-sociales {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Estilos para los iconos de redes sociales */
+        .redes-sociales img {
+            width: 50px; /* Ancho deseado */
+            height: auto; /* Altura automática para mantener la proporción */
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+        /* Efecto de escala al pasar el cursor sobre las imágenes */
+        .redes-sociales img:hover {
+            transform: scale(1.1);
+        }
+        /* Estilos para la barra de navegación */
+        nav {
+            background: #e81f76;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #000;
+        }
+        /* Estilos para el contenido principal */
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 4rem;
+            color: #e81f76;
+        }
+        .content p {
+            color: #000000;
+            color: #333; /* Cambio de color para mayor contraste */
+            font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+            line-height: 1.6; /* Espaciado entre líneas */
+            text-align: justify; /* Justificación del texto */
+            padding: 0 2rem; /* Espacio en los lados para mejorar la legibilidad */
+            margin-bottom: 2rem; /* Margen inferior para separar los párrafos */
+        }
+         p {
+            color: #333; /* Cambio de color para mayor contraste */
+            font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+            line-height: 1.6; /* Espaciado entre líneas */
+            text-align: justify; /* Justificación del texto */
+            padding: 0 2rem; /* Espacio en los lados para mejorar la legibilidad */
+            margin-bottom: 2rem; /* Margen inferior para separar los párrafos */
+        }
+        /* Estilos para el pie de página */
+        footer {
+            background: #f9f9fa;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        /* Estilos para los botones */
+        .btn {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 900;
+            padding: 10px 20px;
+            border: 2px solid;
+            transition: 0.3s all ease;
+            margin-top: 1rem;
+        }
+        .btn-primary {
+            border-color: #e81f76;
+            background: #e81f76;
+            color: white;
+        }
+        .btn-primary:hover {
+            border-color: #000;
+            background: #000;
+        }
+        .btn-outline {
+            background: transparent;
+            color: #29275d;
+            border-color: #29275d;
+        }
+        .btn-outline:hover {
+            background: #29275d;
+            color: white;
+        }
+        /* Estilos específicos para la sección de video de YouTube */
+        .youtube-video {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .youtube-video iframe {
+            width: 80%; /* Ancho del iframe */
+            max-width: 800px; /* Máximo ancho del iframe */
+            height: 400px; /* Altura del iframe */
+            border: none; /* Sin borde */
+        }
+        .capacitaciones {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            background-color: #df3c83;
+        }
+        .capacitaciones img {
+            width: 100%;
+            max-height: 200px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        /* Estilos para la galería */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        /* Estilos para cada elemento de la galería */
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilos para las imágenes */
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        /* Efecto de zoom al pasar el cursor sobre las imágenes */
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+        img{
+            height: 400px;
+        }
+        /* Estilos para las columnas */
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+        .column {
+            width: 48%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .column img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Turismo Municipal</h1>
+        <br>
+        <br>
+        <center>
+            <img src="sanluiscapitallogo.png" height="200px" width="190px">
+        </center>
+        <!-- Barra de navegación -->
+        <nav>
+            <ul>
+                <li><a href="INICIO.HTML">INICIO</a></li>
+                <li><a href="SOMOS.HTML">QUIENES SOMOS</a></li>
+                <li><a href="TURISMO SOCIAL.HTML">TURISMO SOCIAL</a></li>
+                <li><a href="TURISMO DE REUNIONES.HTML">TURISMO DE REUNIONES</a></li>
+                <li><a href="CAPACITACION TURISTICA.HTML">CAPACITACIÓN TURISTICA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+   <!-- Contenido principal de la página -->
+    <div class="content">
+        <!-- Información sobre las oficinas -->
+        <h2>CAPACITACION TURISTICA</h2>
+        <img src="CAPACITACION TURISTICA.HTML">
+        <div class="capacitaciones">
+            <p>Con el objetivo de fortalecer a la cadena de valor, la Dirección de Turismo Municipal de San Luis Potosí ofrece de manera continua capacitaciones que cuentan con DC3 (constancia de habilidades o constancia de competencias laborales y es emitido por un agente capacitador con registro ante la STPS).</p>
+            <h3>CICLO DE EDUCACIÓN CONTINUA EN EL SECTOR TURÍSTICO</h3>
+            <p>Restaurantes - Hoteles - Prestadores de Servicios - Estudiantes de Turismo</p>
+            <p>¿Formas parte del sector turístico y te gustaría capacitarte de forma gratuita?</p>
+            <p>¡Conocer nuestra oferta!</p>
+            <p>Regístrate <a href="https://docs.google.com/forms/d/e/1FAIpQLSen_A7Lfde_wJgWXgscZMM3Ol1bedUKzSx5y2LM5mNhicybTg/closedform?pli=1">aquí</a></p>
+        </div> 
+         <!-- Contenedor de PDFs -->
+    <!-- Icono de Facebook -->
+    <a href="https://sitio.sanluis.gob.mx/TurismoMunicipal/files/2TomoTurismoMunicipio.pdf" target="_blank"><img src="GUIA1.PNG" width="100PX" height="100PX" alt="TURISMO DE LA CAPITAL"></a>
+    <!-- Icono de Instagram -->
+    <a href="https://sitio.sanluis.gob.mx/TurismoMunicipal/files/2TomoTurismoMunicipio.pdf" target="_blank"><img src="GUIA2.PNG" width="100PX" height="100PX" alt="TURISMO DE LA CAPITAL"></a>
+    <!-- Icono de Twitter -->
+    <a href="https://sitio.sanluis.gob.mx/TurismoMunicipal/files/GuiaBrille.pdf" target="_blank"><img src="GUIA3.PNG" width="100PX" height="100PX" alt="GUIA DE BRAILLE "></a>    
+    </div>
+
+    
+     <!-- CHAT IA-->
+    <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq0b56a99cc4d27859b0c8872b060caa5b848b6d6d30a608dadb3d265cd523c135" defer>  </script>
+    <!-- Pie de página -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="1.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item">
+            <img src="2.jpg" alt="Imagen 2">
+        </div>
+        <div class="gallery-item">
+            <img src="3.jpg" alt="Imagen 3">
+        </div>
+        <div class="gallery-item">
+            <img src="4.jpg" alt="Imagen 3">
+            
+        </div>
+        
+       
+    </div>
+    <footer>
+        <p> MIGUEL ANGEL LOPEZ ROSALES PROGRAMACION WEB 1 UNIVERSIDAD POLITECNICA DE SAN LUIS POTOSI PROYECTO FINAL</p>oter>
+</body>
+</html>
